@@ -1,0 +1,172 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+
+body{
+    overflow: hidden;
+}
+
+.creador_tarjeta{
+    border: black;
+    
+}
+
+.estilo_creador_tarjeta{
+    text-align: justify;
+}
+
+.derechos{
+ text-align: center;
+ margin-top: 200px;
+}
+
+html, body, main {
+    height: 100vh;
+}
+
+.img-creador{
+    width: 550px;
+    height: 550px;
+    margin: auto;
+}
+
+/*Login Style*/
+#panel-left {
+    display: flex !important;
+    align-items: center;
+    background-image: url("https://thumbs.dreamstime.com/b/e-r-o-fondo-del-grunge-de-la-textura-pared-ladrillo-144976480.jpg");
+    height: 100vh;
+}
+
+    #panel-left .central-section {
+        padding: 25% 0px;
+    }
+
+    #panel-left .logos-container > img,
+    #panel-left .logos-container > .img-separador {
+        width: calc(100% / 3);
+    }
+
+    #panel-left .logos-container-2 > img {
+        width: calc(80% / 3);
+        padding: 0px 10% 0px 0px;
+    }
+
+#panel-right {
+    display: flex !important;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.img-Login{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.description {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#panel-left .logo-container svg {
+    width: 220px;
+}
+
+
+#panel-right form input {
+    background-color: unset;
+    border: 0;
+    border-bottom: 2px solid #394867;
+    border-radius: 0;
+    font-weight: 400;
+}
+
+.btn.btn-primary {
+    border: 0 !important;
+    border-radius: 50px !important;
+    background-color: #14274E !important;
+    padding: 15px 40px !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+.links a {
+    color: #14274E;
+}
+
+.line-footer {
+    background-color: rgb(75,74,74);
+    height: 5vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: -5vh;
+    width: 100%;
+}
+
+#efectoRotacion:hover {
+    transform: rotate(360deg);
+    transition: all 20s;
+}
+
+@media only screen and (max-width: 767px) {
+    #panel-left {
+        display: none !important;
+    }
+
+    body{
+        overflow:visible;
+    }
+
+    h1 {
+        font-size: 25px !important;
+    }
+
+    .derechos{
+        text-align: center;
+        margin-top: 80px;
+    }
+}
